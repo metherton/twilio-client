@@ -1,1 +1,36 @@
-<p>This is the partial for view 1.</p>
+
+
+
+<!-- twilio html stuff -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <section class="agent-activity offline">
+                <p class="activity">Offline</p>
+                <button class="btn-default change-activity" data-next-activity="Idle">Go Available</button>
+            </section>
+            <section class="agent-activity idle">
+                <p class="activity"><span>Available</span></p>
+                <button class="btn-default change-activity" data-next-activity="Offline">Go Offline</button>
+            </section>
+            <section class="agent-activity reserved">
+                <p class="activity">Reserved</p>
+            </section>
+            <section class="agent-activity busy">
+                <p class="activity">Busy</p>
+            </section>
+            <section class="agent-activity wrapup">
+                <p class="activity">Wrap-Up</p>
+                <button class="btn-default change-activity" data-next-activity="Idle">Go Available</button>
+                <button class="btn-default change-activity" data-next-activity="Offline">Go Offline</button>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <section class="log">
+                <textarea id="log" readonly="true"></textarea>
+            </section>
+        </div>
+    </div>
+</div>
